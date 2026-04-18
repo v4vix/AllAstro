@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#000511"/>
+  <!-- constellation dots -->
+  <circle cx="32" cy="32" r="5" fill="#FFB347"/>
+  <circle cx="16" cy="16" r="3" fill="#FFD700"/>
+  <circle cx="48" cy="16" r="2.5" fill="#FFB347"/>
+  <circle cx="12" cy="40" r="2" fill="#9B59B6"/>
+  <circle cx="52" cy="44" r="2.5" fill="#00FFCC"/>
+  <circle cx="32" cy="56" r="2" fill="#FFB347"/>
+  <!-- constellation lines -->
+  <line x1="32" y1="32" x2="16" y2="16" stroke="rgba(255,179,71,0.5)" stroke-width="1.5"/>
+  <line x1="32" y1="32" x2="48" y2="16" stroke="rgba(255,179,71,0.5)" stroke-width="1.5"/>
+  <line x1="32" y1="32" x2="52" y2="44" stroke="rgba(255,179,71,0.4)" stroke-width="1.5"/>
+  <line x1="32" y1="32" x2="12" y2="40" stroke="rgba(155,89,182,0.4)" stroke-width="1.5"/>
+  <line x1="32" y1="32" x2="32" y2="56" stroke="rgba(0,255,204,0.35)" stroke-width="1.5"/>
+</svg>
