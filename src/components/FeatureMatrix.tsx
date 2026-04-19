@@ -21,6 +21,9 @@ const FEATURES: Feature[] = [
   { label: 'Varshfal (Annual)', nakshatra: 'no', babaji: 'partial', meraastromitr: 'yes', category: 'Core' },
   { label: 'Vaastu Analysis', nakshatra: 'yes', babaji: 'yes', meraastromitr: 'partial', category: 'Core' },
   { label: 'Compatibility Match', nakshatra: 'yes', babaji: 'yes', meraastromitr: 'yes', category: 'Core' },
+  { label: 'Sade Sati Analysis', nakshatra: 'yes', babaji: 'yes', meraastromitr: 'yes', category: 'Core' },
+  { label: 'Ashtakavarga', nakshatra: 'yes', babaji: 'yes', meraastromitr: 'yes', category: 'Core' },
+  { label: 'Prashna Kundli (Horary)', nakshatra: 'yes', babaji: 'yes', meraastromitr: 'yes', category: 'Core' },
   // AI & Tech
   { label: 'AI Chat Interface', nakshatra: 'yes', babaji: 'partial', meraastromitr: 'yes', category: 'AI & Tech' },
   { label: 'Video Generation', nakshatra: 'no', babaji: 'yes', meraastromitr: 'no', category: 'AI & Tech' },
@@ -91,7 +94,7 @@ export function FeatureMatrix() {
             What's Inside
           </h2>
           <p className="font-cormorant text-white/50 text-lg max-w-2xl mx-auto">
-            18 features across core readings, AI capabilities and platform infrastructure.
+            21 features across core readings, AI capabilities and platform infrastructure.
           </p>
         </motion.div>
 

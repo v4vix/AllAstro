@@ -93,12 +93,16 @@ const TRACKS = [
 const CHANGELOG = [
   { platform: 'Nakshatra', label: 'Learning paths content — 5 courses', status: 'Alpha', color: '#FFB347', note: 'Lesson content live; quiz coverage at 40%' },
   { platform: 'Nakshatra', label: 'Community feed backend', status: 'Alpha', color: '#FFB347', note: 'Post, like, comment — needs moderation tooling' },
+  { platform: 'Nakshatra', label: 'Sade Sati & Ashtakavarga engine', status: 'Beta', color: '#FFB347', note: 'Saturn 7.5-yr transit + BPHS benefic point tally per sign' },
+  { platform: 'Nakshatra', label: 'Prashna Kundli (Horary)', status: 'Beta', color: '#FFB347', note: 'Question-moment chart with primary house auto-detection' },
   { platform: 'BabaJi', label: 'Kundli video player UI', status: 'Beta', color: '#0a9396', note: 'Narrated chart video renders in < 90s' },
   { platform: 'BabaJi', label: 'Matchmaking result cards', status: 'Beta', color: '#0a9396', note: 'Guna table + compatibility score visualisation' },
-  { platform: 'BabaJi', label: 'Vaastu result UI & checklist', status: 'Alpha', color: '#0a9396', note: 'Room-by-room card layout, PDF export coming' },
+  { platform: 'BabaJi', label: 'Sade Sati with remedies', status: 'Beta', color: '#0a9396', note: 'Phase-aware Saturn transit with gemstone & mantra remedies' },
+  { platform: 'BabaJi', label: 'Prashna Kundli + Ashtakavarga', status: 'Beta', color: '#0a9396', note: 'BPHS Ashtakavarga + horary readings for any question' },
   { platform: 'MeraAstroMitr', label: 'Consultation booking calendar', status: 'Beta', color: '#9b59b6', note: 'Slot-picker, credit debit, confirmation email' },
   { platform: 'MeraAstroMitr', label: 'Mantra & Totke UI', status: 'Beta', color: '#9b59b6', note: 'Personalised from weak-planet kundli data' },
-  { platform: 'MeraAstroMitr', label: 'Vastu Shastra page (Pro)', status: 'Alpha', color: '#9b59b6', note: 'Upload floor plan → AI checklist + PDF' },
+  { platform: 'MeraAstroMitr', label: 'Sade Sati & Ashtakavarga', status: 'Beta', color: '#9b59b6', note: 'Full transit analysis + sarva ashtakavarga for all 12 signs' },
+  { platform: 'MeraAstroMitr', label: 'Prashna Kundli (Horary)', status: 'Alpha', color: '#9b59b6', note: 'Keyword-based topic detection → house + verdict' },
 ]
 
 const STATUS_STYLE: Record<string, string> = {
