@@ -105,9 +105,10 @@ export function FeatureMatrix() {
         </div>
 
         {/* Table */}
-        <div className="glass border border-white/8 rounded-2xl overflow-hidden">
+        <div className="glass border border-white/8 rounded-2xl overflow-x-auto">
+          <div className="min-w-[520px]">
           {/* Sticky column headers */}
-          <div className="grid grid-cols-[1fr_repeat(3,minmax(100px,140px))] bg-cosmos/80 border-b border-white/8 sticky top-[0px]">
+          <div className="grid grid-cols-[1fr_repeat(3,minmax(100px,140px))] bg-cosmos/80 border-b border-white/8">
             <div className="px-5 py-4 font-cinzel text-xs tracking-widest text-white/30 uppercase">Feature</div>
             {COLS.map((c) => (
               <div
@@ -134,6 +135,7 @@ export function FeatureMatrix() {
               ))}
             </div>
           ))}
+          </div>
         </div>
       </div>
     </section>
