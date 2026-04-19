@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'>
+  <defs>
+    <linearGradient id='bg' x1='0%' y1='0%' x2='100%' y2='100%'>
+      <stop offset='0%' style='stop-color:#05050f'/>
+      <stop offset='50%' style='stop-color:#0d0d1e'/>
+      <stop offset='100%' style='stop-color:#05050f'/>
+    </linearGradient>
+    <radialGradient id='glow1' cx='50%' cy='50%' r='50%'>
+      <stop offset='0%' style='stop-color:#FFB347;stop-opacity:0.12'/>
+      <stop offset='100%' style='stop-color:#FFB347;stop-opacity:0'/>
+    </radialGradient>
+  </defs>
+  <rect width='1200' height='630' fill='url(#bg)'/>
+  <ellipse cx='600' cy='315' rx='500' ry='280' fill='url(#glow1)'/>
+  
+  <!-- Stars -->
+  <circle cx='120' cy='80' r='1.5' fill='#FFD700' opacity='0.7'/>
+  <circle cx='340' cy='55' r='1' fill='#fff' opacity='0.5'/>
+  <circle cx='580' cy='30' r='1.5' fill='#FFD700' opacity='0.6'/>
+  <circle cx='820' cy='70' r='1' fill='#fff' opacity='0.5'/>
+  <circle cx='1050' cy='45' r='1.5' fill='#FFD700' opacity='0.7'/>
+  <circle cx='180' cy='560' r='1' fill='#fff' opacity='0.4'/>
+  <circle cx='450' cy='590' r='1.5' fill='#FFD700' opacity='0.5'/>
+  <circle cx='750' cy='580' r='1' fill='#fff' opacity='0.4'/>
+  <circle cx='1000' cy='570' r='1.5' fill='#FFD700' opacity='0.6'/>
+  
+  <!-- Top eyebrow -->
+  <text x='600' y='195' text-anchor='middle' font-family='serif' font-size='16' letter-spacing='8' fill='#FFB347' opacity='0.7' font-weight='normal'>✦  VEDIC AI PLATFORMS  ✦</text>
+  
+  <!-- Main title -->
+  <text x='600' y='295' text-anchor='middle' font-family='Georgia, serif' font-size='96' font-weight='bold' fill='url(#titleGrad)'>
+    <tspan fill='#FFD700'>All</tspan><tspan fill='#FFEAA0'>Astro</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x='600' y='355' text-anchor='middle' font-family='Georgia, serif' font-size='24' fill='#ffffff' opacity='0.55' letter-spacing='2'>Three cosmic platforms. One destination.</text>
+  
+  <!-- Platform pills -->
+  <rect x='238' y='400' width='160' height='38' rx='19' fill='#FFB34720' stroke='#FFB34740' stroke-width='1'/>
+  <text x='318' y='424' text-anchor='middle' font-family='serif' font-size='14' fill='#FFB347' letter-spacing='2'>✦ NAKSHATRA</text>
+  
+  <rect x='518' y='400' width='160' height='38' rx='19' fill='#0a939620' stroke='#0a939640' stroke-width='1'/>
+  <text x='598' y='424' text-anchor='middle' font-family='serif' font-size='14' fill='#0a9396' letter-spacing='2'>ॐ BABAJI</text>
+  
+  <rect x='798' y='400' width='160' height='38' rx='19' fill='#9b59b620' stroke='#9b59b640' stroke-width='1'/>
+  <text x='878' y='424' text-anchor='middle' font-family='serif' font-size='12' fill='#9b59b6' letter-spacing='1'>⬡ MERAASTROMITR</text>
+  
+  <!-- Bottom line -->
+  <line x1='400' y1='488' x2='800' y2='488' stroke='#FFB347' stroke-width='0.5' opacity='0.3'/>
+  <text x='600' y='520' text-anchor='middle' font-family='serif' font-size='13' fill='#ffffff' opacity='0.25' letter-spacing='3'>allastro.dev</text>
+</svg>

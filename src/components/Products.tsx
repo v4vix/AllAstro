@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
       'Gamification & achievements',
       'iOS + Android via Capacitor',
     ],
-    href: '#',
+    href: 'https://github.com/v4vix/nakshatra',
   },
   {
     id: 'babaji',
@@ -65,7 +65,7 @@ const PRODUCTS: Product[] = [
       'Knowledge graph RAG',
       'Expo React Native app',
     ],
-    href: '#',
+    href: 'https://github.com/v4vix/BabaJi',
   },
   {
     id: 'meraastromitr',
@@ -89,7 +89,7 @@ const PRODUCTS: Product[] = [
       '14 E2E tests (Playwright)',
       'Referral & billing system',
     ],
-    href: '#',
+    href: 'https://github.com/v4vix/MeraAstroMitr',
   },
 ]
 
@@ -166,6 +166,8 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
       {/* CTA */}
       <a
         href={p.href}
+        target="_blank"
+        rel="noopener noreferrer"
         className="flex items-center gap-2 text-sm font-cinzel font-semibold tracking-wide transition-all duration-200 group-hover:gap-3"
         style={{ color: p.accentColor }}
       >
