@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
       'Gamification & achievements',
       'iOS + Android via Capacitor',
     ],
-    href: 'https://github.com/v4vix/nakshatra',
+    href: 'https://nakshatra-app.onrender.com',
   },
   {
     id: 'babaji',
@@ -65,7 +65,7 @@ const PRODUCTS: Product[] = [
       'Knowledge graph RAG',
       'Expo React Native app',
     ],
-    href: 'https://github.com/v4vix/BabaJi',
+    href: 'https://babaji-web.onrender.com',
   },
   {
     id: 'meraastromitr',
@@ -89,7 +89,7 @@ const PRODUCTS: Product[] = [
       '14 E2E tests (Playwright)',
       'Referral & billing system',
     ],
-    href: 'https://github.com/v4vix/MeraAstroMitr',
+    href: 'https://meraastromitr-web.onrender.com',
   },
 ]
 
