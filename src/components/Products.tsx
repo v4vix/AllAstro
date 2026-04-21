@@ -41,7 +41,7 @@ const PRODUCTS: Product[] = [
       'Gamification & achievements',
       'iOS + Android via Capacitor',
     ],
-    href: 'https://nakshatra-app.onrender.com',
+    href: 'https://nakshatra-ne4o.onrender.com/',
   },
   {
     id: 'babaji',
