@@ -101,6 +101,7 @@ export const OracleChatRequestSchema = z.object({
 export type OracleChatRequest = z.infer<typeof OracleChatRequestSchema>
 
 // SSE chunk shape
-export interface OracleTextChunk { type: 'text'; text: string; done: boolean }
+export interface OracleTextChunk  { type: 'text';  text: string; done: boolean }
 export interface OracleErrorChunk { type: 'error'; error: string }
-export type OracleChunk = OracleTextChunk | OracleErrorChunk
+export interface OracleDoneChunk  { type: 'done' }
+export type OracleChunk = OracleTextChunk | OracleErrorChunk | OracleDoneChunk
