@@ -3,12 +3,14 @@ import { StatsStrip } from '../components/StatsStrip'
 import { DailyBrief } from '../components/DailyBrief'
 import { Products } from '../components/Products'
 import { PlatformQuiz } from '../components/PlatformQuiz'
-import { FeatureMatrix } from '../components/FeatureMatrix'
 import { Testimonials } from '../components/Testimonials'
 import { DeploySection } from '../components/DeploySection'
 import { Footer } from '../components/Footer'
+import { useAdminContext } from '../lib/AdminContext'
 
 export function Home() {
+  const { isAdmin } = useAdminContext()
+
   return (
     <main>
       <Hero />
@@ -16,9 +18,8 @@ export function Home() {
       <DailyBrief />
       <Products />
       <PlatformQuiz />
-      <FeatureMatrix />
       <Testimonials />
-      <DeploySection />
+      {isAdmin && <DeploySection />}
       <Footer />
     </main>
   )

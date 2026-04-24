@@ -1,10 +1,14 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link, useLocation } from 'react-router-dom'
+import { AdminLogin } from './AdminLogin'
+import { useAdminContext } from '../lib/AdminContext'
 
-const links = [
+const PUBLIC_LINKS = [
   { label: 'Platforms', href: '/#platforms' },
-  { label: 'Compare', href: '/#compare' },
+]
+
+const ADMIN_LINKS = [
   { label: 'Deploy', href: '/#deploy' },
 ]
 
@@ -13,12 +17,15 @@ export function Navbar() {
   const [open, setOpen] = useState(false)
   const location = useLocation()
   const isBeta = location.pathname === '/beta'
+  const { isAdmin, setIsAdmin } = useAdminContext()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
+  const visibleLinks = isAdmin ? [...PUBLIC_LINKS, ...ADMIN_LINKS] : PUBLIC_LINKS
 
   return (
     <header
@@ -51,7 +58,7 @@ export function Navbar() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {!isBeta && links.map((l) => (
+          {!isBeta && visibleLinks.map((l) => (
             <a
               key={l.href}
               href={l.href}
@@ -70,19 +77,22 @@ export function Navbar() {
           </Link>
         </nav>
 
-        {/* CTA */}
-        {!isBeta ? (
-          <a href="/#platforms" className="hidden md:inline-flex btn-primary text-sm py-2 px-5">
-            Explore Universe
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-              <path d="M5 12h14M12 5l7 7-7 7" />
-            </svg>
-          </a>
-        ) : (
-          <Link to="/" className="hidden md:inline-flex btn-ghost text-sm py-2 px-5">
-            ← Hub
-          </Link>
-        )}
+        {/* Right side: CTA + Admin */}
+        <div className="hidden md:flex items-center gap-3">
+          <AdminLogin onAuthChange={setIsAdmin} />
+          {!isBeta ? (
+            <a href="/#platforms" className="inline-flex btn-primary text-sm py-2 px-5">
+              Explore Universe
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+          ) : (
+            <Link to="/" className="inline-flex btn-ghost text-sm py-2 px-5">
+              ← Hub
+            </Link>
+          )}
+        </div>
 
         {/* Hamburger */}
         <button
@@ -114,7 +124,7 @@ export function Navbar() {
             transition={{ duration: 0.2 }}
             className="md:hidden mx-4 mt-2 glass border border-white/10 rounded-xl p-5 flex flex-col gap-4"
           >
-            {!isBeta && links.map((l) => (
+            {!isBeta && visibleLinks.map((l) => (
               <a key={l.href} href={l.href} onClick={() => setOpen(false)}
                 className="font-cinzel text-sm font-semibold tracking-widest text-white/70 hover:text-gold transition-colors">
                 {l.label}
