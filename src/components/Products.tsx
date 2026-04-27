@@ -16,6 +16,23 @@ interface Product {
   stack: string[]
   features: string[]
   href: string
+  /** Audience identifier the MAM SSO hub will use to mint a handoff token. */
+  ssoAudience?: 'babaji' | 'nakshatra' | 'meraastromitr'
+  /** Sister-app callback URL that consumes the handoff token. */
+  ssoCallback?: string
+}
+
+// MAM is the identity hub for the portfolio. The /sso/initiate page checks
+// the visitor's MAM session and either issues a handoff token + redirects to
+// `ssoCallback`, or bounces them through the MAM login flow first.
+const MAM_SSO_INITIATE_BASE =
+  (import.meta.env.VITE_MAM_SSO_INITIATE_URL as string | undefined) ??
+  'https://meraastromitr-web.onrender.com/sso/initiate'
+
+function ssoLaunchUrl(p: Product): string | null {
+  if (!p.ssoAudience || !p.ssoCallback) return null
+  const params = new URLSearchParams({ aud: p.ssoAudience, return_to: p.ssoCallback })
+  return `${MAM_SSO_INITIATE_BASE}?${params.toString()}`
 }
 
 const PRODUCTS: Product[] = [
@@ -42,6 +59,8 @@ const PRODUCTS: Product[] = [
       'iOS + Android via Capacitor',
     ],
     href: 'https://nakshatra-ne4o.onrender.com/',
+    ssoAudience: 'nakshatra',
+    ssoCallback: 'https://nakshatra-ne4o.onrender.com/sso/callback',
   },
   {
     id: 'babaji',
@@ -66,6 +85,8 @@ const PRODUCTS: Product[] = [
       'Expo React Native app',
     ],
     href: 'https://babaji-web.onrender.com',
+    ssoAudience: 'babaji',
+    ssoCallback: 'https://babaji-web.onrender.com/sso/callback',
   },
   {
     id: 'meraastromitr',
@@ -164,6 +185,32 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
       </div>
 
       {/* CTA */}
+      <ProductCTA p={p} />
+    </motion.article>
+  )
+}
+
+function ProductCTA({ p }: { p: Product }) {
+  const ssoUrl = ssoLaunchUrl(p)
+  return (
+    <div className="flex flex-col gap-2">
+      {ssoUrl ? (
+        <a
+          href={ssoUrl}
+          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full font-cinzel text-xs font-semibold tracking-wide transition-all duration-200 hover:gap-3"
+          style={{
+            background: `${p.accentColor}1c`,
+            border: `1px solid ${p.accentColor}55`,
+            color: p.accentColor,
+          }}
+          title={`Sign in once on MeraAstroMitr — your session is securely handed off to ${p.name}`}
+        >
+          Open {p.name} with one sign-in
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      ) : null}
       <a
         href={p.href}
         target="_blank"
@@ -171,12 +218,12 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
         className="flex items-center gap-2 text-sm font-cinzel font-semibold tracking-wide transition-all duration-200 group-hover:gap-3"
         style={{ color: p.accentColor }}
       >
-        Explore {p.name}
+        {ssoUrl ? `Open ${p.name} site directly` : `Explore ${p.name}`}
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>
       </a>
-    </motion.article>
+    </div>
   )
 }
 
