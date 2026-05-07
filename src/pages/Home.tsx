@@ -1,6 +1,7 @@
 import { Hero } from '../components/Hero'
 import { StatsStrip } from '../components/StatsStrip'
 import { DailyBrief } from '../components/DailyBrief'
+import { FreeTools } from '../components/FreeTools'
 import { Products } from '../components/Products'
 import { PlatformQuiz } from '../components/PlatformQuiz'
 import { Testimonials } from '../components/Testimonials'
@@ -16,6 +17,7 @@ export function Home() {
       <Hero />
       <StatsStrip />
       <DailyBrief />
+      <FreeTools />
       <Products />
       <PlatformQuiz />
       <Testimonials />

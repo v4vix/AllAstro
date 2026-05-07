@@ -3,6 +3,7 @@ import { StarfieldCanvas } from './components/StarfieldCanvas'
 import { Navbar } from './components/Navbar'
 import { Home } from './pages/Home'
 import { BetaAccess } from './pages/BetaAccess'
+import { NumerologyPage } from './pages/NumerologyPage'
 import { AdminProvider } from './lib/AdminContext'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/beta" element={<BetaAccess />} />
+              <Route path="/numerology" element={<NumerologyPage />} />
             </Routes>
           </div>
         </div>
