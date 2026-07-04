@@ -12,7 +12,8 @@ modules/agent-monetization/
 │   │   ├── 01-role-prompt.md        ← paste into Project custom instructions
 │   │   ├── 02-business-os.md        ← your operating system (cadence, rules, metrics)
 │   │   ├── 03-context-profile.md    ← fill in once: your skills, hours, capital, niche
-│   │   └── 04-decision-log.md       ← running log of decisions + experiments
+│   │   ├── 04-decision-log.md       ← running log of decisions + experiments
+│   │   └── 05-quality-guardrails.md ← binding quality policy: risk tiers, evals, incidents
 │   ├── processes/
 │   │   ├── _process-template.md     ← blank template for new process files
 │   │   ├── monetization-strategy.md ← weekly revenue-mix analyzer
@@ -42,8 +43,8 @@ modules/agent-monetization/
 3. **Fill in `core-files/03-context-profile.md`** — 10 minutes of honest answers
    about your skills, time, and capital. This is the highest-leverage file.
 4. **Upload** `02-business-os.md`, your filled `03-context-profile.md`,
-   `04-decision-log.md`, and `monetization/strategies-2026.md` to the Project
-   knowledge.
+   `04-decision-log.md`, `05-quality-guardrails.md`, and
+   `monetization/strategies-2026.md` to the Project knowledge.
 5. **Run `prompts/week-0-setup.md`** in a new conversation. It scores the 20
    ideas + 15 niches against your profile and picks your top 3 candidates.
 6. When you commit to an idea, **upload that idea's process file** from

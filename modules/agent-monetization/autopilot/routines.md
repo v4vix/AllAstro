@@ -38,6 +38,10 @@ of `state/inbox.md`; log the week's plan one-liner in `state/scoreboard.md`.
 
 ## Rules for every run
 
+- Apply `05-quality-guardrails.md` to every output: risk-tier label on each
+  draft, no invented specifics, `[VERIFY]` tags where sourcing is missing.
+- Friday runs additionally sample 3 eval-set cases and report drift (see the
+  guardrails file's eval-set section).
 - Drafts only — never send, post, or contact anyone.
 - Max 3 priorities; no new ideas (focus rule in `02-business-os.md`).
 - Anything ambiguous → a question in `state/inbox.md`, not a guess.
