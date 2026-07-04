@@ -61,6 +61,15 @@ active idea just generate noise.
 
 ## Guardrails (why this stays safe on autopilot)
 
+Autopilot without guardrails is just automated mistakes. These are
+preconditions, not suggestions:
+
+- `05-quality-guardrails.md` is binding on every run: risk-tier labels on
+  every draft, no invented specifics, `[VERIFY]` tags where sourcing is
+  missing. A run that can't meet the bar outputs questions, not guesses.
+- **Automatic downgrade:** the quality tripwires apply to autopilot first —
+  2+ customer-visible defects from a pipeline in a month, or repeated eval
+  drift, and that pipeline drops back to manual until it re-earns its level.
 - Runs write to `state/` and commit — they never email, post, or message
   anyone. Sending is always the human's click.
 - Every run starts by reading `04-decision-log.md`; it cannot re-open
