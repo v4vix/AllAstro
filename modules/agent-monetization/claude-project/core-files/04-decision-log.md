@@ -15,6 +15,7 @@ YYYY-MM-DD | [DECISION|EXPERIMENT|KILL|PIVOT|SCALE] | one-line summary | why | r
 ```
 2026-07-03 | DECISION | Adopted the Business OS and this log | starting point | —
 2026-07-04 | DECISION | Active idea = #3 AI Content Repurposing Service | best budget-to-reward for a solo: ~$0 startup cost, revenue in 2-4 weeks, recurring retainers, free-sample pitch removes sales friction, feeds hybrid path (services -> template packs) | review at Week 4 checkpoint per kill/scale rules
+2026-07-04 | DECISION | Niche = spiritual/wellness/mindset coaches with podcasts/YouTube (business coaches as fallback) | they sell courses/programs so repurposing has direct ROI; AllAstro gives domain credibility competitors lack; profile defaults set as [ASSUMED] pending founder corrections | review niche choice at Week 2 if reply rate <10%
 ```
 
 ## Experiment tracker

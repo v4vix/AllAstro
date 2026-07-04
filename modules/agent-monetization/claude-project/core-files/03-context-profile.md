@@ -3,43 +3,55 @@
 Claude: this file describes the founder. Weight every recommendation against
 it. If a field is blank, ask for it before making plans that depend on it.
 
+> NOTE: fields tagged `[ASSUMED]` are lean-solo defaults set on 2026-07-04 so
+> the OS can operate. Correct any that are wrong — idea scoring and weekly
+> plans lean on them.
+
 ## Founder
 
-- **Name / timezone:**
-- **Hours available per week for this business:**
-- **Runway / capital I'm willing to invest:** $
-- **Monthly tools budget (AI, hosting, software):** $
-- **Target:** $______ MRR by ______ (date)
-- **Risk tolerance:** (low = need revenue in 30 days / medium / high = can build 3–6 months)
+- **Name / timezone:** [ASSUMED] Asia/Kolkata (IST)
+- **Hours available per week for this business:** [ASSUMED] 10–15
+- **Runway / capital I'm willing to invest:** [ASSUMED] $200 total to start
+- **Monthly tools budget (AI, hosting, software):** [ASSUMED] $50/mo
+- **Target:** [ASSUMED] $2,000 MRR by 2026-12-31
+- **Risk tolerance:** [ASSUMED] low-medium — want first revenue within 30–60 days
 
 ## Skills inventory (be honest — this drives idea selection)
 
-- **Technical:** (e.g., can code? no-code only? can deploy a web app? APIs?)
-- **Writing / content:** (rate 1–5, and what formats — long-form, video scripts, copy)
-- **Sales / outreach comfort:** (rate 1–5; will I do calls? cold DMs? only inbound?)
-- **Design:** (rate 1–5)
-- **Domain expertise / industries I know from work or hobbies:**
-- **Languages spoken:**
+- **Technical:** can ship and deploy web apps (evidence: built the AllAstro
+  site — React/Vite, hosting, SSO launcher)
+- **Writing / content:** [ASSUMED] 3/5 — competent with AI assist, not yet a
+  distinctive voice
+- **Sales / outreach comfort:** [ASSUMED] 2/5 — DMs/email yes, cold calls no;
+  hence the free-sample pitch motion (work is the pitch, no selling call needed)
+- **Design:** [ASSUMED] 3/5 — can produce clean layouts with Tailwind/templates
+- **Domain expertise / industries I know from work or hobbies:** astrology,
+  numerology, spiritual/wellness content (evidence: AllAstro platform + free tools)
+- **Languages spoken:** [ASSUMED] English + Hindi
 
 ## Existing assets
 
-- **Audience:** (email list size, social followers by platform, or "none")
-- **Network:** (industries where I know 5+ people who could be customers)
-- **Existing projects/domains/tools I could reuse:**
+- **Audience:** [ASSUMED] none significant yet
+- **Network:** [ASSUMED] none mapped yet — list any industry with 5+ warm contacts
+- **Existing projects/domains/tools I could reuse:** AllAstro platform
+  (astrology/numerology tools site) — domain credibility with
+  spiritual/wellness creators; can host demos and landing pages at $0 extra
 
 ## Preferences
 
-- **Work I enjoy:** (writing / building / talking to people / analyzing)
-- **Work I will avoid even if profitable:** (this matters — plans that depend
-  on it will fail)
-- **Face on camera / voice on calls?** yes / no
-- **Niches I'm personally drawn to** (from the 20 ideas or 15 unconventional
-  niches, or my own):
+- **Work I enjoy:** [ASSUMED] building + writing over live selling
+- **Work I will avoid even if profitable:** [ASSUMED] cold calls, on-camera video
+- **Face on camera / voice on calls?** [ASSUMED] camera no; short voice calls OK
+- **Niches I'm personally drawn to:** spiritual/wellness creator space (fits
+  AllAstro domain knowledge)
 
 ## Current status
 
 - **Active idea:** #3 — AI Content Repurposing Service
   (`processes/ideas/03-content-repurposing-service.md`)
+- **Niche:** coaches & consultants with podcasts/YouTube who sell
+  courses/programs — primary sub-niche: spiritual/wellness/mindset coaches
+  (AllAstro domain edge); fallback if budgets prove thin: business coaches
 - **Stage:** validating
 - **This month's #1 goal:** first paying retainer client via the
   free-sample pitch (repurpose a prospect's content, then offer the weekly
