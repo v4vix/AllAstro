@@ -13,7 +13,8 @@ YYYY-MM-DD | [DECISION|EXPERIMENT|KILL|PIVOT|SCALE] | one-line summary | why | r
 ## Entries
 
 ```
-YYYY-MM-DD | DECISION | Adopted the Business OS and this log | starting point | —
+2026-07-03 | DECISION | Adopted the Business OS and this log | starting point | —
+2026-07-04 | DECISION | Active idea = #3 AI Content Repurposing Service | best budget-to-reward for a solo: ~$0 startup cost, revenue in 2-4 weeks, recurring retainers, free-sample pitch removes sales friction, feeds hybrid path (services -> template packs) | review at Week 4 checkpoint per kill/scale rules
 ```
 
 ## Experiment tracker

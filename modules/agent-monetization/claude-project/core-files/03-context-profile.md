@@ -38,9 +38,12 @@ it. If a field is blank, ask for it before making plans that depend on it.
 
 ## Current status
 
-- **Active idea:** (none yet / name)
-- **Stage:** selecting / validating / building / selling / scaling
-- **This month's #1 goal:**
+- **Active idea:** #3 — AI Content Repurposing Service
+  (`processes/ideas/03-content-repurposing-service.md`)
+- **Stage:** validating
+- **This month's #1 goal:** first paying retainer client via the
+  free-sample pitch (repurpose a prospect's content, then offer the weekly
+  service)
 
 ---
 *Update the "Current status" block whenever it changes. Everything else,
