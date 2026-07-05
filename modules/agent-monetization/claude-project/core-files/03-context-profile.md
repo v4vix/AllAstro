@@ -29,6 +29,32 @@ it. If a field is blank, ask for it before making plans that depend on it.
   numerology, spiritual/wellness content (evidence: AllAstro platform + free tools)
 - **Languages spoken:** [ASSUMED] English + Hindi
 
+## Skill development plan (for idea #3 — set 2026-07-04)
+
+Ordered by revenue impact; each skill is trained BY the work, not before it.
+
+1. **Voice-matching copywriting** (the core craft, ~3 → target 4+): build a
+   voice guide from 10 samples of each creator's best content before
+   drafting; after every batch, diff my edits against Claude's draft — the
+   recurring edits become voice-guide rules. First 3 free samples = the
+   training program.
+2. **Outreach writing** (2 → 3 is enough): the free-sample motion carries
+   the weakness — the skill to practice is one personalized opening line
+   per prospect. 10 reps/week; track reply rate per opener style in
+   `state/voice-of-customer.md`.
+3. **Client rhythm** (new): expectation-setting + weekly approval cadence.
+   Use the process file's onboarding template verbatim for client #1; refine
+   from friction.
+4. **AI ops discipline** (already strong from building AllAstro): formalize
+   with per-client eval sets per `05-quality-guardrails.md` — this is the
+   quality moat competitors skip.
+5. **Deliberately NOT investing in now:** video editing, paid ads, SEO —
+   irrelevant to #3's revenue path this quarter.
+
+**Sleeper advantage:** shipping software. Most repurposing freelancers can't
+build; at month 3+ this converts client patterns into a template pack or
+small tool (hybrid playbook step 2) — don't spend it before then.
+
 ## Existing assets
 
 - **Audience:** [ASSUMED] none significant yet
